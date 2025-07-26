@@ -1,7 +1,8 @@
 -- Sol's RNG 自动收集挂机脚本（适用于Xeno执行器）
 -- 自动收集所有带有ProximityPrompt且ActionText为"Pick up"的物品
 -- 支持一键开始/暂停
-
+-- coding by molips
+--qq群
 local Players = game:GetService("Players")
 local Workspace = game:GetService("Workspace")
 local RunService = game:GetService("RunService")
@@ -219,11 +220,11 @@ end
 startBtn.MouseButton1Click:Connect(function()
     running = not running
     if running then
-        startBtn.Text = "暂停挂机"
+        startBtn.Text = "暂停挂机-免费脚本倒卖死全家"
         statusLabel.Text = "状态：收集中..."
         collectAll()
     else
-        startBtn.Text = "开始挂机"
+        startBtn.Text = "开始挂机-免费脚本倒卖死全家"
         statusLabel.Text = "状态：已暂停"
     end
 end)
@@ -239,7 +240,7 @@ local closeBtn = Instance.new("TextButton")
 closeBtn.Parent = frame
 closeBtn.Size = UDim2.new(0, 30, 0, 30)
 closeBtn.Position = UDim2.new(1, -35, 0, 5)
-closeBtn.Text = "X"
+closeBtn.Text = "X 免费脚本倒卖死全家"
 closeBtn.BackgroundColor3 = Color3.fromRGB(200, 50, 50)
 closeBtn.TextColor3 = Color3.new(1,1,1)
 closeBtn.Font = Enum.Font.SourceSansBold
@@ -250,4 +251,4 @@ closeBtn.MouseButton1Click:Connect(function()
 end)
 
 -- 提示
-print("Sol's RNG 自动收集挂机脚本已加载！点击界面按钮开始/暂停挂机。") 
+print("Sol's RNG 自动收集挂机脚本已加载！点击界面按钮开始/暂停挂机。倒卖死全家-- coding by molips ") 
